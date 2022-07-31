@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="717.0" prefWidth="1062.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.PrimaryController">
+   <children>
+      <TableView fx:id="tableView" layoutX="97.0" layoutY="99.0" prefHeight="517.0" prefWidth="875.0">
+        <columns>
+           <TableColumn prefWidth="47.0" text="id_zestawu">
+              <cellValueFactory><PropertyValueFactory property="id_zestawu" />
+              </cellValueFactory>
+           </TableColumn>
+
+           <TableColumn prefWidth="147.0" text="nazwa_procka">
+              <cellValueFactory><PropertyValueFactory property="nazwa_procka" />
+              </cellValueFactory>
+           </TableColumn>
+
+           <TableColumn prefWidth="97.0" text="chipset">
+              <cellValueFactory><PropertyValueFactory property="chipset" />
+              </cellValueFactory>
+           </TableColumn>
+
+           <TableColumn prefWidth="97.0" text="karta_graficzna">
+              <cellValueFactory><PropertyValueFactory property="karta_graficzna" />
+              </cellValueFactory>
+           </TableColumn>
+
+           <TableColumn prefWidth="97.0" text="ram">
+              <cellValueFactory><PropertyValueFactory property="ram" />
+              </cellValueFactory>
+           </TableColumn>
+
+           <TableColumn prefWidth="97.0" text="dysk">
+              <cellValueFactory><PropertyValueFactory property="dysk" />
+              </cellValueFactory>
+           </TableColumn>
+
+           <TableColumn prefWidth="97.0" text="chlodzenie">
+              <cellValueFactory><PropertyValueFactory property="chlodzenie" />
+              </cellValueFactory>
+           </TableColumn>
+
+           <TableColumn prefWidth="97.0" text="obudowa">
+              <cellValueFactory><PropertyValueFactory property="obudowa" />
+              </cellValueFactory>
+           </TableColumn>
+
+           <TableColumn prefWidth="97.0" text="wyslane">
+              <cellValueFactory><PropertyValueFactory property="wyslane" />
+              </cellValueFactory>
+           </TableColumn>
+
+
+        </columns>
+      </TableView>
+      <Button layoutX="97.0" layoutY="635.0" mnemonicParsing="false" onAction="#zestaw5500" prefHeight="25.0" prefWidth="104.0" text="Zestaw za 5500" />
+      <Button layoutX="209.0" layoutY="635.0" mnemonicParsing="false" onAction="#zestaw7950" prefHeight="25.0" prefWidth="104.0" text="Zestaw za 7950" />
+      <Button layoutX="320.0" layoutY="635.0" mnemonicParsing="false" onAction="#zestaw11200" prefHeight="25.0" prefWidth="104.0" text="Zestaw za 11200" />
+      <Button layoutX="432.0" layoutY="635.0" mnemonicParsing="false" onAction="#zestaw18100" text="Zestaw za 18100" />
+      <Button layoutX="545.0" layoutY="635.0" mnemonicParsing="false" onAction="#usunwyslane" text="usun wyslane" />
+      <Button layoutX="641.0" layoutY="635.0" mnemonicParsing="false" onAction="#oznacz" prefHeight="25.0" prefWidth="129.0" text="oznacz jako wyslane" />
+   </children>
+</AnchorPane>
